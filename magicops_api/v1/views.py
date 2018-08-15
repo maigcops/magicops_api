@@ -10,7 +10,6 @@ class UserViewSet(viewsets.ModelViewSet):
 
     queryset = User.objects.all().order_by('-date_joined')
     serializer_class = serializers.UserSerializer
-    lookup_field = 'username'
 
 
 class GroupViewSet(viewsets.ModelViewSet):
